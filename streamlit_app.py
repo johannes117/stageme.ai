@@ -10,9 +10,9 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption="Original Image", use_column_width=True)
 
-    # Send the image to the Dalle API
+    # Send the image to the Stable Diffusion API
     api_key = "your-api-key"
-    api_url = "https://api.dalle.io/v1/staging"
+    api_url = "https://api.stablediffusion.com/v1/room"
     headers = {"Authorization": f"Bearer {api_key}"}
     files = {"image": uploaded_file}
     response = requests.post(api_url, headers=headers, files=files)
