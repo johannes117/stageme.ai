@@ -11,7 +11,7 @@ if uploaded_file is not None:
     st.image(image, caption="Original Image", use_column_width=True)
 
     # Send the image to the Stable Diffusion API
-    api_key = "76XgHJI9sRqRf24mQIVe6KySJZyDV6wcJbhzVVkYamRW2yie9UMTovBnyvu7"
+    api_key = ""
     api_url = "https://stablediffusionapi.com/api/v3/img2img"
     headers = {
         "Content-Type": "application/json"
